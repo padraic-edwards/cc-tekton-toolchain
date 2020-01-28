@@ -48,4 +48,16 @@ properties:
 - name: servicenowtoken
   value: ${SERVICE_NOW_TOKEN}
   type: password
-
+- name: gheIssueRepo
+  value: ${APP_URL}
+  type: text 
+- name: gheUser
+  value: ${APP_URL}
+  type: text
+- name: gheToken
+  value: ${APP_URL}
+  type: password
+- name: ghEmergencyLabel
+  value: ${APP_URL}
+  type: text
+  
