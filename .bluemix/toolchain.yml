@@ -89,6 +89,8 @@ services:
           SERVICE_NOW_TOKEN: '{{services.pipeline.parameters.service_now_token}}'
           APP_URL: '{{form.app-repo.parameters.repo_url}}'
           EMERGENCY_LABEL: '{{form.pipeline.parameters.emergency_name}}'
+          GHE_ISSUES_REPO: '{{form.issues-repo.parameters.repo_url}}'
+          GHE_USER: '{{form.app-repo.parameters.owner_id}}'
         execute: true
   webide:
     service_id: orion 
