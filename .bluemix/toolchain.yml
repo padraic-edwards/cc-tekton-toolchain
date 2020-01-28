@@ -10,7 +10,10 @@ template:
   icon: secure-lock-kubernetes.svg
   required:
     - build
-    - repo
+    - app-repo
+    - pipeline-repo
+    - evidence-repo
+    - issue-repo
   info:
     git url: >
       "[" + $env.repository + "]" +
