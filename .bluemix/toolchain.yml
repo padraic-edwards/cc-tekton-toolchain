@@ -38,7 +38,7 @@ services:
        type: link
        has_issues: false
        enable_traceability: true
-   app-repo:   
+  app-repo:   
      service_id: github_integrated  
      parameters:
        source_repo_url: 'https://github.ibm.com/cocoa/cocoa-example-app'
