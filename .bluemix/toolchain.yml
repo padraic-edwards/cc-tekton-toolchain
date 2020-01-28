@@ -83,8 +83,9 @@ services:
           PROD_CLUSTER_NAMESPACE: '{{form.pipeline.parameters.prod-cluster-namespace}}'
           REVISION: master
           DEFINITION_REPO: tekton-pipeline-repo
-          APPLICATION_REPO: app_repo
+          APPLICATION_REPO: '{{form.app_repo.parameters.repo_url}}'
           SERVICE_NOW_TOKEN: '{{services.pipeline.parameters.service_now_token}}'
+          APP_URL: '{{services.pipeline.parameters.service_now_token}}'
         execute: true
   webide:
     service_id: orion 
