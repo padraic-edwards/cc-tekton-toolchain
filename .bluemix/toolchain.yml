@@ -68,7 +68,7 @@ services:
     parameters:
       services:
         - repo
-      name: '{{services.app_repo.parameters.repo_name}}'
+      name: '{{services.app-repo.parameters.repo_name}}'
       type: tekton
       ui-pipeline: true
       configuration:
@@ -86,7 +86,7 @@ services:
           DEFINITION_REPO: tekton-pipeline-repo
           APPLICATION_REPO: app-repo
           SERVICE_NOW_TOKEN: '{{services.pipeline.parameters.service_now_token}}'
-          APP_URL: '{{form.app_repo.parameters.repo_url}}'
+          APP_URL: '{{form.app-repo.parameters.repo_url}}'
         execute: true
   webide:
     service_id: orion 
