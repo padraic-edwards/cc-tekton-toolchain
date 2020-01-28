@@ -98,7 +98,7 @@
           "pattern": "\\S"
       }
   },
-  "required": ["app-name", "api-key", "registry-region", "registry-namespace", "prod-region", "prod-resource-group", "prod-cluster-name", "prod-cluster-namespace"],
+  "required": ["app-name", "api-key", "registry-region", "registry-namespace", "prod-region", "prod-resource-group", "prod-cluster-name", "prod-cluster-namespace", "emergency_label"],
   "form": [
      {
         "type": "validator",
@@ -219,7 +219,13 @@
                 "type": "text",
                 "key": "prod-cluster-namespace",
                 "readonly": false
-              }
+              },
+              {
+            "type": "text",
+            "readonly": false,
+            "title": "Emergency Label",
+            "key": "emergency_label"
+           }
           ]
       },{
         "type": "table",
