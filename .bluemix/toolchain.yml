@@ -74,7 +74,6 @@ services:
         content:
           $text: tekton.yaml
         env:
-          GIT_REPO: repo
           CF_APP_NAME: '{{form.pipeline.parameters.app-name}}'
           REGISTRY_REGION_ID: '{{form.pipeline.parameters.registry-region}}'
           REGISTRY_NAMESPACE: '{{form.pipeline.parameters.registry-namespace}}'
@@ -83,7 +82,7 @@ services:
           PROD_CLUSTER_NAME: '{{form.pipeline.parameters.prod-cluster-name}}'
           PROD_CLUSTER_NAMESPACE: '{{form.pipeline.parameters.prod-cluster-namespace}}'
           REVISION: master
-          DEFINITION_REPO: '{{services.tekton-pipeline-repo.parameters.source_repo_url}}'
+          DEFINITION_REPO: tekton-pipeline-repo
           APPLICATION_REPO: '{{services.app-repo.parameters.source_repo_url}}'
           SERVICE_NOW_TOKEN: '{{services.app-repo.parameters.service_now_token}}'
         execute: true
