@@ -25,12 +25,34 @@ toolchain:
     getting_started:
       $ref: "#/messages/template.gettingStarted" 
 services:
-  repo:
+  app-repo:
+    service_id: githubpublic
+    parameters:
+      repo_name: '{{toolchain.name}}'
+      source_repo_url: 'https://github.com/open-toolchain/hello-containers'
+      type: clone
+      has_issues: false
+      enable_traceability: true
+  pipeline-repo:
     service_id: githubpublic
     parameters:
       repo_name: '{{toolchain.name}}'
       source_repo_url: 'https://github.com/open-toolchain/hello-tekton'
-      type: clone
+      type: link
+      has_issues: false
+      enable_traceability: true
+ issues-repo:
+    service_id: githubpublic
+    parameters:
+      repo_name: 'issues-{{toolchain.name}}'
+      type: new
+      has_issues: false
+      enable_traceability: true
+ evidence-repo:
+    service_id: githubpublic
+    parameters:
+      repo_name: 'evidence-{{toolchain.name}}'
+      type: new
       has_issues: false
       enable_traceability: true
   build:
