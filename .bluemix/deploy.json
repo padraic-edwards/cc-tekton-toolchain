@@ -223,7 +223,7 @@
               {
                 "type": "label",
                 "title": "Emergency Label"
-              }
+              },
               {
             "type": "text",
             "readonly": false,
