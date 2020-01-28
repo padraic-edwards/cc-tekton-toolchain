@@ -392,7 +392,7 @@
         {
             "type": "text",
             "readonly": false,
-            "title": "emergency_label",
+            "title": "Emergency Label for PR",
             "key": "emergency_name"
         },
         {
