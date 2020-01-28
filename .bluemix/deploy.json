@@ -323,7 +323,7 @@
                 {
                     "type": "label",
                     "title": {
-                        "$ref": "#/messages/buildregion"
+                        "$ref": "#/messages/deploy.buildRegion"
                     }
                 },
                 {
