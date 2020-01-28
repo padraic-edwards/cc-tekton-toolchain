@@ -85,7 +85,9 @@ services:
   webide:
     service_id: orion
   serviceNow:
-    service_id: customtool    
+    service_id: customtool 
+  dra:
+    service_id: draservicebroker
 form:
   pipeline:
     parameters:
