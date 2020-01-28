@@ -106,7 +106,7 @@
         },
         "build-region": {
             "description": {
-                "$ref": "#/messages/buildregion"
+                "$ref": "#/messages/deplot.buildRegion"
             },
             "type": "string",
             "disabled": false,
