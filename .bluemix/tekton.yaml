@@ -47,7 +47,7 @@ properties:
   type: text  
 - name: servicenowtoken
   value: ${SERVICE_NOW_TOKEN}
-  type: password
+  type: SECURE
 - name: gheIssueRepo
   value: ${GHE_ISSUES_REPO}
   type: text 
@@ -56,7 +56,7 @@ properties:
   type: text
 - name: gheToken
   value: ${GHE_TOKEN}
-  type: password
+  type: SECURE
 - name: ghEmergencyLabel
   value: ${EMERGENCY_LABEL}
   type: text
