@@ -100,5 +100,6 @@ form:
       app-name: '{{services.app-repo.parameters.repo_name}}'
       prod-cluster-namespace: prod
       build-cluster-namespace: staging
+      emergency_name: EMERGENCY
     schema:
       $ref: deploy.json
