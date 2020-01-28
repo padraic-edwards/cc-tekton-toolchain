@@ -92,7 +92,7 @@ services:
         execute: true
   webide:
     service_id: orion 
-  dra:
+  devops-insights:
     service_id: draservicebroker
 form:
   pipeline:
