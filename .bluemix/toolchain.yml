@@ -88,6 +88,7 @@ services:
           APPLICATION_REPO: app-repo
           SERVICE_NOW_TOKEN: '{{services.pipeline.parameters.service_now_token}}'
           APP_URL: '{{form.app-repo.parameters.repo_url}}'
+          EMERGENCY_LABEL: '{{form.pipeline.parameters.emergency_name}}'
         execute: true
   webide:
     service_id: orion 
@@ -98,5 +99,6 @@ form:
     parameters:
       app-name: '{{services.app-repo.parameters.repo_name}}'
       prod-cluster-namespace: prod
+      build-cluster-namespace: staging
     schema:
       $ref: deploy.json
