@@ -2,14 +2,17 @@
 inputs:
 - type: git
   branch: master
-  service: ${GIT_REPO}
+  service: ${DEFINITION_REPO}
   path: .tekton
 triggers:
 - type: git
   name: Trigger
-  service: ${GIT_REPO}
+  service: ${DEFINITION_REPO}
   branch: master
   events: {"push":true,"pull_request":true,"pull_request_closed":false}
+  eventListener: listener
+- type: manual
+  name: Manual Trigger
   eventListener: listener
 properties:
 - name: apikey
@@ -36,3 +39,13 @@ properties:
 - name: revision
   value: ${REVISION}
   type: text
+- name: definitionRepo
+  value: ${DEFINITION_REPO}
+  type: text
+- name: apprepo
+  value: ${APPLICATION_REPO}
+  type: text  
+- name: servicenowtoken
+  value: ${SERVICE_NOW_TOKEN}
+  type: text
+
