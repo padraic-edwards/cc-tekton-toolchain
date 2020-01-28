@@ -32,9 +32,9 @@ services:
   tekton-pipeline-repo:
      service_id: github_integrated
      parameters:
-       repo_name: '{{toolchain.name}}'
+       repo_name: 'tekton-poc-pipeline'
        repo_url: 'https://github.ibm.com/cocoa/tekton-poc-pipeline'
-       type: link
+       type: clone
        has_issues: false
        enable_traceability: true
        legal: true
