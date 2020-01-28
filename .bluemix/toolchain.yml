@@ -81,13 +81,10 @@ services:
           PROD_REGION_ID: '{{form.pipeline.parameters.prod-region}}'
           PROD_CLUSTER_NAME: '{{form.pipeline.parameters.prod-cluster-name}}'
           PROD_CLUSTER_NAMESPACE: '{{form.pipeline.parameters.prod-cluster-namespace}}'
-          REPOSITORY: '{{services.repo.parameters.source_repo_url}}'
+          DEFINITION_REPO: '{{services.tekton-definition-repo.parameters.source_repo_url}}'
+          APPLICATION_REPO: '{{services.application-repo.parameters.source_repo_url}}'
           REVISION: master
         execute: true
-  webide:
-    service_id: orion
-  serviceNow:
-    service_id: customtool 
   dra:
     service_id: draservicebroker
 form:
