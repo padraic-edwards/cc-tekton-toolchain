@@ -46,14 +46,14 @@ services:
        has_issues: false
        enable_traceability: true
   issues-repo:
-    service_id: githubpublic
+    service_id: github_integrated
     parameters:
       repo_name: 'issues-{{toolchain.name}}'
       type: new
       has_issues: false
       enable_traceability: true
   evidence-repo:
-    service_id: githubpublic
+    service_id: github_integrated
     parameters:
       repo_name: 'evidence-{{toolchain.name}}'
       type: new
