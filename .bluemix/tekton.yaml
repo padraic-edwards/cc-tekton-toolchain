@@ -55,7 +55,7 @@ properties:
   value: ${GHE_USER}
   type: text
 - name: gheToken
-  value: ${ghe_token}
+  value: ${GHE_TOKEN}
   type: password
 - name: ghEmergencyLabel
   value: ${EMERGENCY_LABEL}
