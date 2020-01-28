@@ -236,7 +236,9 @@
               {
             "type": "text",
             "readonly": false,
-            "title": "Emergency Label",
+            title": {
+              "$ref": "#/messages/deploy.emergencylabel"
+            },
             "key": "emergency_label"
            }
           ]
