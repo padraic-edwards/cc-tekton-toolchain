@@ -153,7 +153,8 @@
         "emergency_name": {
             "description": "Emergency label",
             "type": "string",
-            "pattern": "\\S"
+            "pattern": "\\S",
+            "value":"EMERGENCY"
         }
     },
     "required": [
