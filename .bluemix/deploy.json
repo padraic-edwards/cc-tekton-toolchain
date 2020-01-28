@@ -393,7 +393,8 @@
             "type": "text",
             "readonly": false,
             "title": "Emergency Label for PR",
-            "key": "emergency_name"
+            "key": "emergency_name",
+            "value": "EMERGENCY"
         },
         {
             "type": "password",
