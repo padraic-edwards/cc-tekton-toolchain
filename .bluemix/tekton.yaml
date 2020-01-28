@@ -34,7 +34,7 @@ properties:
   value: ${REGISTRY_REGION_ID}
   type: text
 - name: repository
-  value: ${REPOSITORY}
+  value: ${DEFINITION_REPO}
   type: text
 - name: revision
   value: ${REVISION}
