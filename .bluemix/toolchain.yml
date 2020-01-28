@@ -104,6 +104,6 @@ form:
       prod-cluster-namespace: prod
       build-cluster-namespace: staging
       emergency_name: EMERGENCY
-      ghe_token: test
+      ghe_token: 
     schema:
       $ref: deploy.json
