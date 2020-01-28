@@ -43,7 +43,7 @@ properties:
   value: ${DEFINITION_REPO}
   type: text
 - name: apprepo
-  value: ${APPLICATION_REPO}
+  value: ${APP_URL}
   type: text  
 - name: servicenowtoken
   value: ${SERVICE_NOW_TOKEN}
