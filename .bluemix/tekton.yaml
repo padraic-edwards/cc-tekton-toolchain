@@ -47,5 +47,5 @@ properties:
   type: text  
 - name: servicenowtoken
   value: ${SERVICE_NOW_TOKEN}
-  type: text
+  type: password
 
