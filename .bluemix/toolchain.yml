@@ -11,7 +11,7 @@ template:
   required:
     - build
     - app-repo
-    - pipeline-repo
+    - tekton-pipeline-repo
     - evidence-repo
     - issue-repo
     - serviceNow
@@ -30,23 +30,22 @@ toolchain:
     getting_started:
       $ref: "#/messages/template.gettingStarted" 
 services:
-  app-repo:
-    service_id: githubpublic
-    parameters:
-      repo_name: '{{toolchain.name}}'
-      source_repo_url: 'https://github.com/open-toolchain/hello-containers'
-      type: clone
-      has_issues: false
-      enable_traceability: true
-  pipeline-repo:
-    service_id: githubpublic
-    parameters:
-      repo_name: '{{toolchain.name}}'
-      source_repo_url: 'https://github.com/open-toolchain/hello-tekton'
-      repo_url: 'https://github.com/open-toolchain/hello-tekton'
-      type: link
-      has_issues: false
-      enable_traceability: true
+  tekton-pipeline-repo:
+     service_id: github_integrated
+     parameters:
+       repo_name: '{{toolchain.name}}'
+       type: clone
+       source_repo_url: 'https://github.ibm.com/cocoa/tekton-poc-pipeline'
+       type: link
+       has_issues: false
+       enable_traceability: true
+   app-repo:   
+     service_id: github_integrated  
+     parameters:
+       source_repo_url: 'https://github.ibm.com/cocoa/cocoa-example-app'
+       type: link
+       has_issues: false
+       enable_traceability: true
   issues-repo:
     service_id: githubpublic
     parameters:
@@ -81,10 +80,15 @@ services:
           PROD_REGION_ID: '{{form.pipeline.parameters.prod-region}}'
           PROD_CLUSTER_NAME: '{{form.pipeline.parameters.prod-cluster-name}}'
           PROD_CLUSTER_NAMESPACE: '{{form.pipeline.parameters.prod-cluster-namespace}}'
-          DEFINITION_REPO: '{{services.tekton-definition-repo.parameters.source_repo_url}}'
-          APPLICATION_REPO: '{{services.application-repo.parameters.source_repo_url}}'
           REVISION: master
+          DEFINITION_REPO: '{{services.tekton-pipeline-repo.parameters.source_repo_url}}'
+          APPLICATION_REPO: '{{services.app-repo.parameters.source_repo_url}}'
+          SERVICE_NOW_TOKEN: '{{services.app-repo.parameters.service_now_token}}'
         execute: true
+  webide:
+    service_id: orion
+  serviceNow:
+    service_id: customtool 
   dra:
     service_id: draservicebroker
 form:
