@@ -67,7 +67,8 @@ services:
     service_id: pipeline
     parameters:
       services:
-        - repo
+        - app-repo
+        - tekton-pipeline-repo
       name: '{{services.app-repo.parameters.repo_name}}'
       type: tekton
       ui-pipeline: true
