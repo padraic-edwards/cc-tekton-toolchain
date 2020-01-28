@@ -398,13 +398,13 @@
         {
             "type": "text",
             "readonly": false,
-            "title": "Service Now Token"
+            "title": "Service Now Token",
             "key": "service_now_token"
         },
         {
             "type": "text",
             "readonly": false,
-            "title": "Service Now Change Request Number"
+            "title": "Service Now Change Request Number",
             "key": "service_now_number"
         },
         {
