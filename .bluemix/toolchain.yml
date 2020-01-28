@@ -37,6 +37,7 @@ services:
        type: link
        has_issues: false
        enable_traceability: true
+       legal: true
   app-repo:   
      service_id: github_integrated  
      parameters:
@@ -44,6 +45,7 @@ services:
        type: link
        has_issues: false
        enable_traceability: true
+       legal: true
   issues-repo:
     service_id: github_integrated
     parameters:
@@ -51,6 +53,7 @@ services:
       type: new
       has_issues: false
       enable_traceability: true
+      legal: true
   evidence-repo:
     service_id: github_integrated
     parameters:
@@ -58,6 +61,7 @@ services:
       type: new
       has_issues: false
       enable_traceability: true
+      legal: true
   build:
     service_id: pipeline
     parameters:
