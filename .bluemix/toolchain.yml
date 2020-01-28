@@ -41,6 +41,7 @@ services:
     parameters:
       repo_name: '{{toolchain.name}}'
       source_repo_url: 'https://github.com/open-toolchain/hello-tekton'
+      repo_url: 'https://github.com/open-toolchain/hello-tekton'
       type: link
       has_issues: false
       enable_traceability: true
