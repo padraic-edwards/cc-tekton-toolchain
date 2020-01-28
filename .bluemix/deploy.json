@@ -96,7 +96,12 @@
           },
           "type": "string",
           "pattern": "\\S"
-      }
+      },
+   "emergency_label": {
+            "description": "Emergency Label",
+            "type": "string",
+            "pattern": "\\S"
+        }
   },
   "required": ["app-name", "api-key", "registry-region", "registry-namespace", "prod-region", "prod-resource-group", "prod-cluster-name", "prod-cluster-namespace", "emergency_label"],
   "form": [
@@ -158,7 +163,15 @@
       },{
           "type": "table",
           "columnCount": 7,
-          "widths": ["24%","2%","24%", "3%", "23%","1%","23%"],
+          "widths": [
+                "24%",
+                "2%",
+                "24%",
+                "3%",
+                "23%",
+                "1%",
+                "23%"
+            ],
           "items": [
               {
                 "type": "label",
