@@ -221,6 +221,10 @@
                 "readonly": false
               },
               {
+                "type": "label",
+                "title": "Emergency Label"
+              }
+              {
             "type": "text",
             "readonly": false,
             "title": "Emergency Label",
