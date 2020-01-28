@@ -49,15 +49,15 @@ properties:
   value: ${SERVICE_NOW_TOKEN}
   type: password
 - name: gheIssueRepo
-  value: ${APP_URL}
+  value: ${GHE_ISSUES_REPO}
   type: text 
 - name: gheUser
-  value: ${APP_URL}
+  value: ${GHE_USER}
   type: text
 - name: gheToken
-  value: ${APP_URL}
+  value: ${ghe_token}
   type: password
 - name: ghEmergencyLabel
-  value: ${APP_URL}
+  value: ${EMERGENCY_LABEL}
   type: text
   
