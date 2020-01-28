@@ -84,7 +84,7 @@ services:
           REVISION: master
           DEFINITION_REPO: tekton-pipeline-repo
           APPLICATION_REPO: '{{services.app-repo.parameters.source_repo_url}}'
-          SERVICE_NOW_TOKEN: '{{services.app-repo.parameters.service_now_token}}'
+          SERVICE_NOW_TOKEN: '{{services.pipeline.parameters.service_now_token}}'
         execute: true
   webide:
     service_id: orion 
