@@ -53,7 +53,7 @@ services:
       has_issues: false
       enable_traceability: true
   evidence-repo:
-    service_id: github_integrated
+    service_id: githubpublic
     parameters:
       repo_name: 'evidence-{{toolchain.name}}'
       type: new
