@@ -83,9 +83,6 @@ services:
           PROD_CLUSTER_NAMESPACE: '{{form.pipeline.parameters.prod-cluster-namespace}}'
           REPOSITORY: '{{services.repo.parameters.source_repo_url}}'
           REVISION: master
-          EMERGENCY_LABEL: '{{form.pipeline.parameters.emergency_label}}'
-          SERVICE_NOW_TOKEN: '{{form.pipeline.parameters.service_now_token}}'
-          SERVICE_NOW_NUMBER: '{{form.pipeline.parameters.service_now_number}}'
         execute: true
   webide:
     service_id: orion
