@@ -34,7 +34,6 @@ services:
      service_id: github_integrated
      parameters:
        repo_name: '{{toolchain.name}}'
-       type: clone
        source_repo_url: 'https://github.ibm.com/cocoa/tekton-poc-pipeline'
        type: link
        has_issues: false
