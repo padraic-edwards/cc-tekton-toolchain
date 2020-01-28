@@ -34,17 +34,17 @@ services:
      parameters:
        repo_name: 'tekton-poc-pipeline'
        repo_url: 'https://github.ibm.com/cocoa/tekton-poc-pipeline'
-       type: clone
+       type: link
        has_issues: false
-       enable_traceability: true
+       enable_traceability: false
        legal: true
   app-repo:   
      service_id: github_integrated  
      parameters:
        repo_url: 'https://github.ibm.com/cocoa/cocoa-example-app'
-       type: link
+       type: clone
        has_issues: false
-       enable_traceability: true
+       enable_traceability: false
        legal: true
   issues-repo:
     service_id: github_integrated
