@@ -171,7 +171,7 @@
         "build-cluster-name",
         "build-cluster-namespace",
         "emergency_name",
-        "service_now_number",
+        "ghe_token",
         "service_now_token"
     ],
     "form": [
@@ -404,10 +404,10 @@
             "key": "service_now_token"
         },
         {
-            "type": "text",
+            "type": "password",
             "readonly": false,
-            "title": "Service Now Change Request Number",
-            "key": "service_now_number"
+            "title": "GHE Token",
+            "key": "ghe_token"
         },
         {
             "type": "table",
