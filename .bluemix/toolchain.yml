@@ -6,7 +6,7 @@ template:
     $ref: "#/messages/template.name"
   description:
     $ref: "#/messages/template.description"
-  header: '![](toolchain.svg?localize)'
+  header: '![](template-design.svg?localize)'
   icon: secure-lock-kubernetes.svg
   required:
     - build
