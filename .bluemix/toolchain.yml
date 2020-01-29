@@ -24,7 +24,7 @@ template:
         "(" + $env.repository +
           "/tree/" + $env.branch + ")"
 toolchain:
-  name: 'simple-tekton-toolchain-{{timestamp}}'
+  name: 'cc-tekton-toolchain-{{timestamp}}'
   template:
     getting_started:
       $ref: "#/messages/template.gettingStarted" 
