@@ -94,6 +94,7 @@ services:
           GHE_ISSUES_REPO: '{{form.issues-repo.parameters.repo_name}}'
           GHE_USER: '{{form.app-repo.parameters.owner_id}}'
           GHE_TOKEN: '{{form.pipeline.parameters.ghe_token}}'
+          ARTIFACTORY_TOKEN: ''{{form.artifactory-int.parameters.docker_config_json}}''
         execute: true
   webide:
     service_id: orion 
