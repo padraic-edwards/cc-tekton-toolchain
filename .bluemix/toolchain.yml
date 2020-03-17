@@ -38,6 +38,8 @@ services:
        has_issues: false
        enable_traceability: false
        legal: true
+  artifactory-int:
+     service_id: artifactory
   app-repo:   
      service_id: github_integrated  
      parameters:
