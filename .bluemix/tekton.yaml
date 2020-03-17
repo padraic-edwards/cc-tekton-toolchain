@@ -60,4 +60,6 @@ properties:
 - name: ghEmergencyLabel
   value: ${EMERGENCY_LABEL}
   type: text
-  
+- name: dockerConfigJson
+  value: ${ARTIFACTORY_TOKEN}
+  type: text
